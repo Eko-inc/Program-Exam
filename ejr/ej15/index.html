@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ejercicio 15</title>
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Calculadora</h1>
+        <form action="">
+            <div class="aline">
+            <p>Numero 1:<input type="text" id="numero1"></p>
+            
+            <p>Numero 2:<input type="text" id="numero2"></p>
+           
+            <p>Resultado:<input type="text" id="resultado" readonly></p>
+            </div>
+          
+            <div class="calcs">
+            <input type="button" onclick="suma()" class="btn" value="+">
+            <input type="button" onclick="resta()" class="btn" value="-">
+            <input type="button" onclick="mul()" class="btn" value="x">
+            <input type="button" onclick="divi()" class="btn" value="/">
+            <input type="button" onclick="porc()" class="btn" value="%">
+            </div>
+        </form>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>

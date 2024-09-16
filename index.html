@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Selección de Ejercicios</title>
+</head>
+<body>
+
+    <header>
+        <h1>Program Examen</h1>
+        <nav>
+            <ul>
+                <li><a href="ejr/ej1/index.html"># 1</a></li>
+                <li><a href="ejr/ej2/index.html"># 2</a></li>
+                <li><a href="ejr/ej3/index.html"># 3</a></li>
+                <li><a href="ejr/ej4/index.html"># 4</a></li>
+                <li><a href="ejr/ej5/index.html"># 5</a></li>
+                <li><a href="ejr/ej6/index.html"># 6</a></li>
+                <li><a href="ejr/ej7/index.html"># 7</a></li>
+                <li><a href="ejr/ej8/index.html"># 8</a></li>
+                <li><a href="ejr/ej9/index.html"># 9</a></li>
+                <li><a href="ejr/ej10/index.html"># 10</a></li>
+                <li><a href="ejr/ej11/index.html"># 11</a></li>
+                <li><a href="ejr/ej12/index.html"># 12</a></li>
+                <li><a href="ejr/ej13/index.html"># 13</a></li>
+                <li><a href="ejr/ej14/index.html"># 14</a></li>
+                <li><a href="ejr/ej15/index.html"># 15</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="gallery">
+        <a href="#ejercicio1" class="exercise-card">
+            <img src="img/ej1.jpg" alt="Ejercicio 1">
+            <h3>Ejercicio 1</h3>
+            <p>La base de un Triangulo</p>
+            <button class="view-code-btn" onclick="openModal('modal1')">Ver Código</button>
+            <button onclick="window.location.href='ejr/ej1/index.html'" class="view-code-btn">Ir a Pagina</button>
+        </a>
+
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+                <h2>Código del Ejercicio 1</h2>
+                <pre>
+                    //Area of Triangle is = (base * altura)/2
+
+                    var base = 10;
+                    var height = 5;
+                    
+                    //process
+                    let area = (base * height) / 2;
+                    
+                    document.write("The triangle base is: ", base, " and the height is: ", height, " so the area is: ", area);
+                </pre>
+            </div>
+        </div>
+
+
+        <a href="#ejercicio2" class="exercise-card">
+            <img src="img/ej2.webp" alt="Ejercicio 2">
+            <h3>Ejercicio 2</h3>
+            <p>Base de un rectangulo</p>
+            <button class="view-code-btn" onclick="openModal('modal2')">Ver Código</button>
+            <button onclick="window.location.href='ejr/ej2/index.html'" class="view-code-btn">Ir a Pagina</button>
+        </a>
+
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+                <h2>Código del Ejercicio 2</h2>
+                <pre>
+                    //2*(base+altura)
+
+                    var base1 = 10;
+                    var height1 = 10;
+                    
+                    let peri = 2*(base1+height1);
+                    
+                    document.write("the rectangle has a base of: ", base1, " and a height of: ", height1, " so the perimeter is: ", peri);
+                </pre>
+            </div>
+        </div>
+
+        <a href="#ejercicio3" class="exercise-card">
+            <img src="img/ej3.jpeg" alt="Ejercicio 3">
+            <h3>Ejercicio 3</h3>
+            <p>El area de un cuadro</p>
+            <button class="view-code-btn" onclick="openModal('modal3')">Ver Código</button>
+            <button onclick="window.location.href='ejr/ej3/index.html'" class="view-code-btn">Ir a Pagina</button>
+        </a>
+
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('modal3')">&times;</span>
+                <h2>Código del Ejercicio 3</h2>
+                <pre>
+                    //area = lado*lado
+
+                    var sidex = 5;
+                    
+                    let areax = sidex*sidex;
+                    
+                    document.write("the area of a square with a side: ", sidex, " is: ", areax);
+                </pre>
+            </div>
+        </div>
+
+        <a href="#ejercicio4" class="exercise-card">
+            <img src="img/ej4.webp" alt="Ejercicio 4">
+            <h3>Ejercicio 4</h3>
+            <p>Area de un trapezoido</p>
+            <button class="view-code-btn" onclick="openModal('modal4')">Ver Código</button>
+            <button onclick="window.location.href='ejr/ej4/index.html'" class="view-code-btn">Ir a Pagina</button>
+        </a>
+
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('modal4')">&times;</span>
+                <h2>Código del Ejercicio 4</h2>
+                <pre>
+                    //trapezoid = ((basem+basen)*height)/2
+
+                    var basem = 5;
+                    var basen = 2;
+                    var heightb = 35;
+                    
+                    let areat = ((basem+basen)*heightb)/2;
+                    
+                    document.write("The area of a trapezoid with a base major of: ", basem, " and a base minor of: ", basen, " with a height of: ", heightb, " is: ", areat);
+                </pre>
+            </div>
+        </div>
+
+        <a href="#ejercicio5" class="exercise-card">
+            <img src="img/ej5.jpeg" alt="Ejercicio 5">
+            <h3>Ejercicio 5</h3>
+            <p>Ingrese un numero utilizando "for"</p>
+            <button class="view-code-btn" onclick="openModal('modal5')">Ver Código</button>
+            <button onclick="window.location.href='ejr/ej5/index.html'" class="view-code-btn">Ir a Pagina</button>
+        </a>
+
+        <div id="modal5" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('modal5')">&times;</span>
+                <h2>Código del Ejercicio 5</h2>
+                <pre>
+                    var n1 = parseFloat(prompt("Enter ur number:"));
+
+                    //code
+
+                    for (let i = 1; i <= 10; i++) {
+                        n1 += i;
+                        document.write(i, "breaker");
+    
+                    }
+                </pre>
+            </div>
+        </div>
+
+        <a href="#ejercicio6" class="exercise-card">
+            <img src="img/ej6.jpg" alt="Ejercicio 6">
+            <h3>Ejercicio 6</h3>
+            <p>Suma utilizando "for"</p>
+            <button class="view-code-btn" onclick="openModal('modal6')">Ver Código</button>
+            <button onclick="window.location.href='ejr/ej6/index.html'" class="view-code-btn">Ir a Pagina</button>
+        </a>
+
+        <div id="modal6" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('modal6')">&times;</span>
+                <h2>Código del Ejercicio 6</h2>
+                <pre>
+                    //declarar variable
+
+                    let suma = 0;
+
+                    for(let i = 1; i<=10; i++){
+                        document.write(i);
+
+                    }
+                    document.write(i);
+                </pre>
+            </div>
+        </div>
+
+        <a href="#ejercicio7" class="exercise-card">
+            <img src="img/ej5.jpeg" alt="Ejercicio 7">
+            <h3>Ejercicio 7</h3>
+            <p>Numeros utilizando "while".</p>
+            <button class="view-code-btn" onclick="openModal('modal7')">Ver Código</button>
+            <button onclick="window.location.href='ejr/ej7/index.html'" class="view-code-btn">Ir a Pagina</button>
+        </a>
+
+        <div id="modal7" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('modal7')">&times;</span>
+                <h2>Código del Ejercicio 7</h2>
+                <pre>
+                    //declara variables
+
+                    let i = 0;
+
+                    //uso de ciclo while
+                    while(i < 5){
+                        //imprimir el variable
+                        document.write(i);
+                        i++;
+                    }
+                </pre>
+            </div>
+        </div>
+
+        <a href="#ejercicio8" class="exercise-card">
+            <img src="img/ej8.webp" alt="Ejercicio 8">
+            <h3>Ejercicio 8</h3>
+            <p>Numero ingresado mayor que 100 usando "while".</p>
+            <button class="view-code-btn" onclick="openModal('modal8')">Ver Código</button>
+            <button onclick="window.location.href='ejr/ej8/index.html'" class="view-code-btn">Ir a Pagina</button>
+        </a>
+
+        <div id="modal8" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('modal8')">&times;</span>
+                <h2>Código del Ejercicio 8</h2>
+                <pre>
+                    let num = 0;
+
+                    while(num<=100){
+                    num=parseInt(prompt("Ingrese un numero mayor que 100:"));
+                    }
+                    document.write("Numero ingresado mayor que 100: ",num);
+                </pre>
+            </div>
+        </div>
+
+        <a href="#ejercicio9" class="exercise-card">
+            <img src="img/ej9.jpg" alt="Ejercicio 9">
+            <h3>Ejercicio 9</h3>
+            <p>Suma de numeros 1-100 usando "while".</p>
+            <button class="view-code-btn" onclick="openModal('modal9')">Ver Código</button>
+            <button onclick="window.location.href='ejr/ej9/index.html'" class="view-code-btn">Ir a Pagina</button>
+        </a>
+
+        <div id="modal9" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('modal9')">&times;</span>
+                <h2>Código del Ejercicio 9</h2>
+                <pre>
+                    //declarar variables
+                    let sum = 0;
+                    let num = 1;
+
+                    while(num<=100){
+                        sum =sum+num
+                            num++
+                    } document.write("El resultado de la suma de los numeros de 1-100 es: ",sum);
+                </pre>
+            </div>
+        </div>
+
+        <a href="#ejercicio10" class="exercise-card">
+            <img src="img/ej10.jpeg" alt="Ejercicio 10">
+            <h3>Ejercicio 10</h3>
+            <p>Generar numeros hasta 10 usando "do while"</p>
+            <button class="view-code-btn" onclick="openModal('modal10')">Ver Código</button>
+            <button onclick="window.location.href='ejr/ej10/index.html'" class="view-code-btn">Ir a Pagina</button>
+        </a>
+
+        <div id="modal10" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('modal10')">&times;</span>
+                <h2>Código del Ejercicio 10</h2>
+                <pre>
+                    //declarar variables
+
+                    let i = 1;
+                    //inicion del ciclo repetitivo
+                    do{
+                       document.write(i);
+                         i++;
+                    }while(i<=10);
+                </pre>
+            </div>
+        </div>
+
+        <a href="#ejercicio11" class="exercise-card">
+            <img src="img/ej11.jpeg" alt="Ejercicio 11">
+            <h3>Ejercicio 11</h3>
+            <p>5050 "do while".</p>
+            <button class="view-code-btn" onclick="openModal('modal11')">Ver Código</button>
+            <button onclick="window.location.href='ejr/ej11/index.html'" class="view-code-btn">Ir a Pagina</button>
+        </a>
+
+        <div id="modal11" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('modal11')">&times;</span>
+                <h2>Código del Ejercicio 11</h2>
+                <pre>
+                    //declarar variables
+                    let num = 1;
+                    let sum = 0;
+                    do{
+                    
+                      sum=sum+num;
+                      num++;
+                    
+                    }while(
+                        num<=100
+                       
+                    ); document.write(sum);
+                    
+                </pre>
+            </div>
+        </div>
+
+        <a href="#ejercicio12" class="exercise-card">
+            <img src="img/ej12.jpeg" alt="Ejercicio 12">
+            <h3>Ejercicio 12</h3>
+            <p>Convertir a Cm o M.</p>
+            <button class="view-code-btn" onclick="openModal('modal12')">Ver Código</button>
+            <button onclick="window.location.href='ejr/ej12/index.html'" class="view-code-btn">Ir a Pagina</button>
+        </a>
+
+        <div id="modal12" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('modal12')">&times;</span>
+                <h2>Código del Ejercicio 12</h2>
+                <pre>
+                    //variables
+                    let amount = parseFloat(prompt("enter the amount to convert"));
+                    let unity = prompt("cm or m?");
+                    
+                    //ifff
+                    if (unity === "m"){
+                        let cm = amount * 100;
+                        document.write("its ", cm, "m");
+                    }
+                    else if (unity === "cm"){
+                        let m = amount / 100;
+                        document.write("its ", m, "cm");
+                    }
+                    
+                    else{
+                        document.write("Error");
+                    };
+                    
+                    
+                </pre>
+            </div>
+        </div>
+
+        <a href="#ejercicio13" class="exercise-card">
+            <img src="img/ej13.jpeg" alt="Ejercicio 13">
+            <h3>Ejercicio 13</h3>
+            <p>Juego de adivinanza.</p>
+            <button class="view-code-btn" onclick="openModal('modal13')">Ver Código</button>
+            <button onclick="window.location.href='ejr/ej13/index.html'" class="view-code-btn">Ir a Pagina</button>
+        </a>
+
+        <div id="modal13" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('modal13')">&times;</span>
+                <h2>Código del Ejercicio 13</h2>
+                <pre>
+                    let numeroSecreto = Math.floor(Math.random()*100)+1;
+                    let intentos = 0;
+                    
+                    function adivinaNumero(){
+                        const intento = parseInt(document.getElementById
+                            ('intento').value);
+                            intentos++;
+                            const pista = document.getElementById('pista');
+                    
+                            if (intento < numeroSecreto) {
+                                pista.textContent = "Mas alto";
+                            } else if (intento > numeroSecreto) {
+                                pista.textContent = "Mas Bajo"
+                            } else {
+                                pista.textContent = `Felicidades, adivinastes el numero en ${intentos} intentos.`;
+                            }
+                    }
+                </pre>
+            </div>
+        </div>
+
+        <a href="#ejercicio14" class="exercise-card">
+            <img src="img/ej14.jpeg" alt="Ejercicio 14">
+            <h3>Ejercicio 14</h3>
+            <p>Factorial de numero.</p>
+            <button class="view-code-btn" onclick="openModal('modal14')">Ver Código</button>
+            <button onclick="window.location.href='ejr/ej14/index.html'" class="view-code-btn">Ir a Pagina</button>
+        </a>
+
+        <div id="modal14" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('modal14')">&times;</span>
+                <h2>Código del Ejercicio 14</h2>
+                <pre>
+                    function calcularFactorial(n){
+                        if (n === 0 || n === 1) {
+                            return 0;
+                        }
+                    
+                        let resultado = 1;
+                        for (let i = n; i > 1; i--){
+                            resultado *= i;
+                        }
+                        return resultado;
+                    }
+                    
+                    function mostrarFactorial(){
+                        const numero = parseInt(document.getElementById
+                            ('numero').value);
+                        const resultado = calcularFactorial(numero);
+                        document.getElementById('resultado').textContent = `El factorial de ${numero} es ${resultado}`;
+                    }
+                </pre>
+            </div>
+        </div>
+
+        <a href="#ejercicio15" class="exercise-card">
+            <img src="img/ej15.jpg" alt="Ejercicio 15">
+            <h3>Ejercicio 15</h3>
+            <p>Calculadora.</p>
+            <button class="view-code-btn" onclick="openModal('modal15')">Ver Código</button>
+            <button onclick="window.location.href='ejr/ej15/index.html'" class="view-code-btn">Ir a Pagina</button>
+        </a>
+
+        <div id="modal15" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('modal15')">&times;</span>
+                <h2>Código del Ejercicio 15</h2>
+                <pre>
+                    function suma() {
+                        var numero1 = parseFloat(document.getElementById('numero1').value);
+                        var numero2 = parseFloat(document.getElementById('numero2').value);
+                        var resultado = numero1 + numero2;
+                    
+                        document.getElementById('resultado').value = resultado;
+                    }
+                    
+                    function resta() {
+                        var numero1 = parseFloat(document.getElementById('numero1').value);
+                        var numero2 = parseFloat(document.getElementById('numero2').value);
+                        var resultado = numero1 - numero2;
+                    
+                        document.getElementById('resultado').value = resultado;
+                    }
+                    
+                    function mul() {
+                        var numero1 = parseFloat(document.getElementById('numero1').value);
+                        var numero2 = parseFloat(document.getElementById('numero2').value);
+                        var resultado = numero1 * numero2;
+                    
+                        document.getElementById('resultado').value = resultado;
+                    }
+                    
+                    function divi() {
+                        var numero1 = parseFloat(document.getElementById('numero1').value);
+                        var numero2 = parseFloat(document.getElementById('numero2').value);
+                        var resultado = numero1 / numero2;
+                    
+                        document.getElementById('resultado').value = resultado;
+                    }
+                    
+                </pre>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>All rights reserved Kyle Hyde 2024 &copy;</p>
+    </footer>
+
+    <script src="js.js"></script>
+
+</body>
+</html>
